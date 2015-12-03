@@ -1,0 +1,53 @@
+.container {
+  margin: 0 auto;
+  width: 100%;
+
+  [class*="col-"] {
+    float: left;
+    margin-right: 2%;
+    box-sizing: border-box;
+  }
+
+  .last {
+    margin-right: 0;
+  }
+
+  .col-6 {
+    width: 49%;
+  }
+
+  .col-4 {
+    width: 33.33333333%;
+  }
+
+  .col-offset-1 {
+    margin-left: 6.33333333%;
+  }
+}
+
+.clearfix:after,
+.container:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  //visibility: hidden;
+}
+
+.clearfix,
+.container {
+  display: inline-block;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix,
+* html .container {
+  height: 1%;
+}
+
+.clearfix, .container {
+  display: block;
+}
+
+/* End hide from IE-mac */
+

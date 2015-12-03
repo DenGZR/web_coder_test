@@ -1,0 +1,46 @@
+@import "../variables";
+
+//banner start
+.banner {
+  background-color: @orange;
+  background: radial-gradient(at 50% 50%, @orange + #222, @orange);
+  background-size: 50% 100%;
+  background-repeat: repeat-x;
+  overflow: hidden;
+
+  .container {
+    background-color: @bannerWrapperBgCol;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #000000;
+    height: 466px;
+    margin: 25px auto;
+    width: @mainWidth;
+    min-width: 760px;
+    position: relative;
+    z-index: 100;
+
+    .slider {
+      position: relative;
+
+      .owl-pagination {
+        position: absolute;
+        bottom: 30px;
+        left: 40%;
+
+        .owl-page span {
+          background: none repeat scroll 0 0 #3E2927;
+          border: 1px solid #3D2927;
+          border-radius: 8px;
+          box-shadow: 0 0 2px #FFFFFF;
+          cursor: pointer;
+          display: inline-block;
+          opacity: 0.8;
+        }
+
+        .owl-page.active span {
+          background: @orange;
+        }
+      }
+    }
+  }
+}

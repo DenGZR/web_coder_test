@@ -1,0 +1,9 @@
+/* const*/
+.background_gradient_grey {
+  background: #CCCCCC;
+  background: linear-gradient(to bottom, #f4f9fa 0%, #e7e8e8 100%);
+}
+.background_gradient_orange {
+  background: #ff8d1e;
+  background: linear-gradient(to bottom, #f4f9fa 0%, #e7e8e8 100%);
+}

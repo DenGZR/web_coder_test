@@ -1,0 +1,250 @@
+@import "../variables";
+
+/*register-form start*/
+.register-form {
+
+  h3 {
+    display: inline-block;
+    padding: 20px;
+    font: lighter 3rem calibri;
+    position: relative;
+    color: @orange;
+    overflow: hidden;
+
+    span {
+      background: url(../img/gradient-grey.png) repeat-x;
+      position: absolute;
+      display: block;
+      top: 22px;
+      width: 100%;
+      height: 29px;
+    }
+  }
+
+  form {
+    color: @regFormTxtCol;
+
+    select::-ms-expand {
+      display: none;
+    }
+
+    input::-ms-clear {
+      display: none;
+    }
+
+    select {
+      display: inline-block;
+      border: none;
+      box-shadow: none;
+      background-color: transparent;
+      background-image: none;
+      appearance: none;
+      width: 100%;
+      margin-left: 10px;
+      height: inherit;
+      text-align: center;
+    }
+    .form-wrap {
+      position: relative;
+      display: inline-block;
+      height: 32px;
+      width: @mainWidth;
+
+      input[type="text"] {
+        height: inherit;
+        width: 100%;
+        padding: 0 0 0 15px;
+        box-sizing: border-box;
+        border: 1px solid @grey;
+        .background_gradient_grey;
+        border-radius: 20px;
+        box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.5);
+      }
+      div {
+        height: inherit;
+        box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.5);
+        background: url("../img/arrow.png") no-repeat scroll 100% 50%, #e7e7e8;
+        background: url("../img/arrow.png") no-repeat scroll 100% 50%, linear-gradient(to bottom, #e7e7e8, #f4f9fa);
+        border: 1px solid @grey;
+        border-radius: 20px;
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    .button {
+      display: block;
+      background: #91BA2C;
+      background: linear-gradient(to bottom, #B5CC3F, #91BA2C 50%, #72AA00 51%, #94C516);
+      border: 1px solid #7FA607;
+      border-radius: 35px;
+      box-shadow: 0 0 2px #84B80A inset;
+      color: #FFFFFF;
+      cursor: pointer;
+      font-size: 50px;
+      font-weight: lighter;
+      margin: 25px auto;
+      text-shadow: -1px -1px #666666;
+      min-width: 260px;
+      width: @mainWidth;
+    }
+    .button:hover {
+      box-shadow: inset 0 0 40px #72aa00;
+    }
+
+    span {
+      display: inline-block;
+      height: 40px;
+      width: 10%;
+    }
+
+    .my-sex {
+      input.female,
+      input.look-for {
+        display: none;
+      }
+
+      label:last-child {
+        position: absolute;
+        right: 0;
+      }
+
+      input.female + label {
+        background: url("../img/gender.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+        display: inline-block;
+        height: 36px;
+        width: 100px;
+        cursor: pointer;
+        vertical-align: middle;
+      }
+      input.female:checked + label {
+        background-position: 0 -36px;
+      }
+      .search {
+        display: inline;
+        margin: 0 0 0 5%;
+      }
+      .search:before {
+        content: ' ';
+        background: url("../img/search.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        margin: 0 10px 0 0;
+      }
+    }
+    .my-name {
+      position: relative;
+
+      .tooltip {
+        position: absolute;
+        top: 5px;
+        right: -35px;
+        display: none;
+        height: 20px;
+        width: 20px;
+        background: url("../img/inputvalid.png") no-repeat 0 0;
+      }
+
+      .tooltip-mes {
+        position: absolute;
+        top: -20px;
+        right: -250px;
+        color: #fff;
+        display: none;
+        width: 180px;
+        background: #000;
+        opacity: 0.7;
+        white-space: nowrap;
+        text-align: center;
+        height: 75px;
+        line-height: 75px;
+      }
+      .tooltip-mes:before {
+        content: '';
+        width: 15px;
+        height: 15px;
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: -8px;
+        transform: rotate(45deg);
+        background: #000;
+      }
+    }
+    .my-age {
+
+      div > div {
+        display: inline-block;
+      }
+      .date {
+        width: 25%;
+        min-width: 40px;
+      }
+      .month {
+        width: 40%;
+        min-width: 45px;
+      }
+      .year {
+        width: 30%;
+        min-width: 40px;
+        position: absolute;
+        right: 0;
+      }
+      .tooltip {
+        position: absolute;
+        top: 5px;
+        right: -35px;
+        display: none;
+        height: 20px;
+        width: 20px;
+        background: url("../img/inputvalid.png") no-repeat 0 0;
+      }
+    }
+    .about-me {
+      margin: -5% 0 0 20%;
+
+      div {
+        display: inline-block;
+        width: 45%;
+      }
+      input {
+        display: inline-block;
+        border: none;
+        box-shadow: none;
+        background-color: transparent;
+        opacity: 0;
+        background-image: none;
+        appearance: none;
+        width: 100%;
+        height: inherit;
+        text-align: center;
+      }
+
+      input + label {
+        height: 14px;
+        line-height: 14px;
+        padding-left: 20px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        font-size: @normal;
+        cursor: pointer;
+      }
+
+      input[type="checkbox"] + label {
+        background-image: url("../img/checkbox.png");
+      }
+
+      input[type="radio"] + label {
+        background-image: url("../img/radiobutton.png");
+      }
+
+      input:checked + label {
+        background-position: 0 -14px;
+      }
+    }
+  }
+}
+
+/*register-form end*/

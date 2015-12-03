@@ -1,0 +1,38 @@
+@import "../variables";
+
+/*footer start*/
+footer {
+  width: @mainWidth;
+  margin: 30px auto;
+  border-top: 1px solid @grey;
+  position: relative;
+
+  .small-logo img {
+    margin: 25px 0 35px 0;
+  }
+  .rights {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-top: 15px;
+
+    p {
+      text-align: right;
+      margin: 10px 0;
+      font: lighter @normalBig @font;
+      color: #000;
+    }
+    p:first-child:before {
+      content: "VD";
+      font: lighter @normalBig @font;
+      color: @grey;
+    }
+
+    p:last-child {
+      font-size: @big;
+      color: @grey;
+    }
+  }
+}
+
+/*footer end*/

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<head>
+    <title>WEB coder</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css"/>
+    <link rel="stylesheet" href="libs/owl-carousel/owl.theme.css"/>
+    <link rel="stylesheet" href="libs/jquery-ui-1.11.4.custom/jquery-ui.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/media.css"/>
+
+    <script src="libs/html5shiv/es5-shim.min.js"></script>
+    <script src="libs/html5shiv/html5shiv.min.js"></script>
+    <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+    <script src="libs/respond/respond.min.js"></script>
+    <script src="libs/jquery/jquery-1.11.1.min.js"></script>
+    <script src="libs/owl-carousel/owl.carousel.js"></script>
+    <script src="libs/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+    <script src="js/my_scripts.js"></script>
+</head>
+<body>
+<div class="wrapper">
+<header>
+    <div class="logo">
+        <p class="logotype">Web<span class="image-logo"></span>Coder</p>
+        <p>Test Task</p>
+    </div>
+</header>
+<section class="banner">
+    <div class="container">
+        <div class="slider col-6">
+            <div class="item">
+                <img src="img/slide-1.jpg" alt="Foto Girl"/>
+            </div>
+            <div class="item">
+                <img src="img/slide-2.jpg" alt="Foto Girl and Boy"/>
+            </div>
+            <div class="item">
+                <img src="img/slide-3.jpg" alt="Foto Girl and Boy"/>
+            </div>
+            <div class="item">
+                <img src="img/slide-4.jpg" alt="Foto Girl"/>
+            </div>
+        </div>
+        <div class="register-form col-6 last">
+            <h3>
+                <span></span>
+                Join us now. It's FREE
+            </h3>
+
+            <form action="./some.php">
+                <div class="my-sex">
+                    <span>I am</span>
+
+                    <div class="form-wrap">
+                        <input id="sex" class="female" name="iam" type="checkbox">
+                        <label for="sex"></label>
+                        <span class="search">looking for</span>
+                        <input id="look-for" class="female" name="partner" type="checkbox" checked="checked"/>
+                        <label for="look-for"></label>
+                    </div>
+                </div>
+                <div class="my-name">
+                    <span>Name</span>
+
+                    <div class="form-wrap">
+                        <input id="name" name="my-name" type="text"/>
+                        <span class="tooltip"></span>
+                        <label for="name" class="tooltip-mes">Enter your name</label>
+                    </div>
+                </div>
+                <div class="my-age">
+                    <span>Age</span>
+
+                    <div class="form-wrap">
+                        <div class="date">
+                            <select name="date">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+
+                            </select>
+                        </div>
+                        <div class="month">
+                            <select name="month">
+                                <option value="January">January</option>
+                                <option value="February">February</option>
+                                <option value="March">March</option>
+                                <option value="April">April</option>
+                                <option value="May">May</option>
+                                <option value="June">June</option>
+                                <option value="July">July</option>
+                                <option value="August">August</option>
+                                <option value="September">September</option>
+                                <option value="October">October</option>
+                                <option value="November">November</option>
+                                <option value="December">December</option>
+                            </select>
+                        </div>
+                        <div class="year">
+                            <select id="year" name="year">
+                                <option value="1980">1980</option>
+                                <option value="1981">1981</option>
+                                <option value="1982">1982</option>
+                                <option value="1983">1983</option>
+                                <option value="1984">1984</option>
+                                <option value="1985">1985</option>
+                                <option value="1986">1986</option>
+                                <option value="1987">1987</option>
+                                <option value="1988">1988</option>
+                                <option value="1989">1989</option>
+                                <option value="2014">2014</option>
+                            </select>
+                        </div>
+                        <span class="tooltip"></span>
+                    </div>
+
+                </div>
+                <div class="my-location">
+                    <span>City</span>
+
+                    <div class="form-wrap">
+                        <div class="location">
+                            <select name="location">
+                                <option value="London">London</option>
+                                <option value="Kiev">Kiev</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-me">
+                    <div class="life-style">
+                        <input name="life-style" type="checkbox" checked id="life-style-cool">
+                        <label for="life-style-cool">I'm cool</label>
+                        <input name="life-style" type="checkbox" id="life-style-lg">
+                        <label for="life-style-lg">Life's good</label>
+                    </div>
+                    <div class="i-like">
+                        <input type="radio" name="drink" id="drink-tee">
+                        <label for="drink-tee">Tee</label>
+                        <input type="radio" name="drink" checked id="drink-beer">
+                        <label for="drink-beer">Beer</label>
+                    </div>
+                </div>
+                <input type="submit" class="button" value="Start Now">
+            </form>
+        </div>
+
+    </div>
+</section>
+<section class="main-content">
+    <div class="container">
+        <div class="text-round col-6">
+            <h4>Code this block</h4>
+            <img class="round-img" src="./img/girl.png" alt="foto"/>
+            <p>This text should be changeable. Lorem ipsum text here. Offers great opportunities to everyone looking to
+                meet locals, find romantic dates and make new friends. Our dating site gives you hours of dating fun,
+                together with seemingly endless possibilities to meet new single people from your area, make friends, go
+                on a date and enjoy good company. With thousands of local personals, will make your life a whole lot
+                busier with all that dating. This is a great place to find true friends or devoted partners for
+                long-term relationships or marriage. We</p>
+        </div>
+        <div class="users-list col-6 last">
+            <div class="person-carousel">
+                <h4>Users List</h4>
+
+                <div class="carousel">
+                    <div class="item">
+                        <a href="#">
+                            <img src="./img/avatar.png" alt="User foto"/>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="./img/avatar.png" alt="User foto"/>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="./img/avatar.png" alt="User foto"/>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="./img/avatar.png" alt="User foto"/>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="./img/avatar.png" alt="User foto"/>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="./img/avatar.png" alt="User foto"/>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="./img/avatar.png" alt="User foto"/>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="./img/avatar.png" alt="User foto"/>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="./img/avatar.png" alt="User foto"/>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="./img/avatar.png" alt="User foto"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-person-info">
+                <ul class="menu">
+                    <li class="user active"><a href="javascript:void(0)">Users List</a></li>
+                    <li class="list-tab"><a href="javascript:void(0)">Active list tab</a></li>
+                </ul>
+                <div class="menu-info">
+                    <div class="container">
+                        <div class="col-6 col-offset-1">
+                            <div id="progress" class="graph">
+                                <div id="bar">
+                                    <p>20%</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                            </div>
+                            <div id="range-slider"></div>
+                        </div>
+                        <div class="col-4 col-offset-1">
+                            <div class="rating">
+                                <div class="diagram">
+                                    <input type="text"
+                                           value="37%"
+                                           data-fgColor="#ff8d1e"
+                                           data-width="80"
+                                           data-height="80"
+                                           class="dial">
+
+                                    <div id="input-value"></div>
+                                </div>
+                                <div class="stars">
+                                    <input id="rating-1" name="rating" type="checkbox" value="1" checked="">
+                                    <label for="rating-1" class="rate"></label>
+                                    <input id="rating-2" name="rating" type="checkbox" value="1" checked="">
+                                    <label for="rating-2" class="rate"></label>
+                                    <input id="rating-3" name="rating" type="checkbox" value="1">
+                                    <label for="rating-3" class="rate"></label>
+                                    <input id="rating-4" name="rating" type="checkbox" value="1">
+                                    <label for="rating-4" class="rate"></label>
+                                    <input id="rating-5" name="rating" type="checkbox" value="1">
+                                    <label for="rating-5" class="rate"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="instruction">
+            <h4>How to succeed in online dating</h4>
+            <article>
+                <p class="first">
+                    There is no secret to being successful in online dating - you
+                    just need to be yourself. Be active, comment on other members'
+                    profiles, send them mails, chat with them and rate their profiles.
+                    We provide a wide range of features allowing you to gather as
+                    many contacts as you can handle. It is better to rotate
+                    photographs of yourself regularly, update the details on your
+                    profile frequently, use the instant communicator facility,
+                    and log onto the site as much as possible, as well as at
+                    different times, to meet as many members as you can. It is
+                    most important to be honest, positive and patient in all
+                    your site activities.
+                </p>
+
+                <p class="line">
+                    In the "My Account" area visit the section for photos entitled "My Photos"
+                    and select the option "Click to upload photos". You will then be prompted
+                    to upload a photo from your computer. Your 'Primary' photo is visible to
+                    everyone and should be a 'normal' photo. 'For friends only' photos are
+                    visible only to those on your friends list.Your 'Primary' photo is
+                    visible to everyone and should be a 'normal' photo. 'For friends only'
+                    photos are visible only to those on your friends list.
+                </p>
+
+                <p class="first">
+                    You can also upload photos to your dating
+                    profile from your Facebook account.
+                </p>
+                <ol start="1">
+                    <li>Access your dating life even when you're not browsing&nbsp;<a href="#">Cupid.com</a>!</li>
+                    <li>Search for new matches from your browser easily</li>
+                    <li>Read and write messages &amp; chat with members live; receive
+                        Datecasts, winks and alerts when your are online or have updated their info
+                    </li>
+                    <li>Read and write messages &amp; chat with members live; receive
+                        Datecasts, winks and alerts when your friends
+                    </li>
+                </ol>
+                <blockquote class="quotes">
+                    In the "My Account" area visit the section for photos entitled "My Photos"
+                    and select the option "Click to upload photos". You will then be prompted
+                    to upload a photo from your computer. Your 'Primary' photo is visible to
+                    everyone and should be a 'normal' photo. 'For friends only' photos are
+                    visible only to those on your friends list.Your 'Primary' photo is
+                    visible to everyone and should be a 'normal' photo. 'For friends only'
+                    photos are visible only to those on your friends list.
+                </blockquote>
+                <a class="more" href="#">
+                    <i>&#9658;</i>
+                    Click here to view more
+                </a>
+            </article>
+        </div>
+    </div>
+
+</section>
+<footer>
+    <div class="small-logo">
+        <img src="./img/small-logo.png" alt="small">
+    </div>
+    <div class="rights">
+        <p>Web Coder Test Task</p>
+
+        <p>2013</p>
+    </div>
+</footer>
+</div>
+</body>
+</html>
